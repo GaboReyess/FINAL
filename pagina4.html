@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculadora </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="Index.html"><img src="IMG/LOGO INDEX.png" class="logoindex"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-cont
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="pagina1.html">¿Quiénes somos?</a>
+            <a class="nav-link" href="pagina2.html">Registro de Notas</a>
+            <a class="nav-link" href="pagina3.html">Misión-Visión</a>
+            <a class="nav-link" href="pagina4.html">Calculadora escolar</a>
+            <a class="nav-link" href="pagina5.html">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div>
+      <h1 class="titulo">CALCULADORA ESCOLAR</h1>
+      <p class="texto_4">A continuación, te proporcionamos una calculadora que te permitirá sumar, restar , multiplicar o dividir 2 números cualesquiera! Solo digita los números en las casillas indicadas y seleccionas la operación que desees realizar. Esperamos te sea de utilidad.</p>
+    </div>
+    <form action="">
+      <table>
+        <tr>
+          <td>Ingrese el primer número:</td>
+          <td><input type="text" id="a"></td>
+        </tr>
+        <tr>
+          <td>Ingrese el segundo número:</td>
+          <td><input type="text" id="b"></td>
+        </tr>
+        <tr><td></td></tr>
+        <tr>
+          <td><input type="button" value="SUMA" onclick="calculosSUM()"></td>
+          <td><input type="button" value="RESTA" onclick="calculosRES()"></td>
+          <td><input type="button" value="MULTIPLICACIÓN" onclick="calculosMUL()"></td>
+          <td><input type="button" value="DIVISION" onclick="calculosDIV()"></td>
+        </tr>
+        <tr>
+          <td><input type="text" id="resultado"> </td>
+        </tr>
+      </table>
+    </form>
+    <script>
+      function calculosSUM(){
+        var num1=parseFloat(document.getElementById('a').value);
+        var num2=parseFloat(document.getElementById('b').value);
+        var resultado=num1+num2;
+        document.getElementById('resultado').value=resultado; 
+      }
+      function calculosRES(){
+        var num1=parseFloat(document.getElementById('a').value);
+        var num2=parseFloat(document.getElementById('b').value);
+        var resultado=num1-num2;
+        document.getElementById('resultado').value=resultado; 
+      }
+      function calculosMUL(){
+        var num1=parseFloat(document.getElementById('a').value);
+        var num2=parseFloat(document.getElementById('b').value);
+        var resultado=num1*num2;
+        document.getElementById('resultado').value=resultado; 
+      }
+      function calculosDIV(){
+        var num1=parseFloat(document.getElementById('a').value);
+        var num2=parseFloat(document.getElementById('b').value);
+        var resultado=num1/num2;
+        document.getElementById('resultado').value=resultado; 
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

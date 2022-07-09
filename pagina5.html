@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="Index.html"><img src="IMG/LOGO INDEX.png" class="logoindex"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
+   aria-cont
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="pagina1.html">¿Quiénes somos?</a>
+            <a class="nav-link" href="pagina2.html">Registro de Notas</a>
+            <a class="nav-link" href="pagina3.html">Misión-Visión</a>
+            <a class="nav-link" href="pagina4.html">Calculadora escolar</a>
+            <a class="nav-link" href="pagina5.html">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <h1 class="titulo">CONTÁCTANOS!</h1>
+    <p>Te proporcionamos este pequeño formulario en el que puedes dejarnos tu opinión acerca de </p>
+    <form action="mailto:gmrb160403@gmail.com" method="post">
+      <div class="row mb-3">
+        <label for="inputEmail3" class="col-sm-2 col-form-label" >Nombre</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="inputEmail3" placeholder="Ingresa tu nombre">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">Correo</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword3" placeholder="Ej:***@***.com">
+        </div>
+        
+      </div>
+      <div class="row mb-3">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">¿De dónde eres?</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword3" placeholder="Ej:De Narnia">
+        </div>
+        <br><br><br><br>
+      <fieldset class="row mb-3">
+        <legend class="col-form-label col-sm-2 pt-0">¿Qué te pareció la página?</legend>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" 
+            checked>
+            <label class="form-check-label" for="gridRadios1">
+              Buena
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+            <label class="form-check-label" for="gridRadios2">
+              Aceptable
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" >
+            <label class="form-check-label" for="gridRadios3">
+              Mala
+            </label>
+          </div>
+        </div>
+      </fieldset>
+      <div class="row mb-3">
+        <div class="col-sm-10 offset-sm-2">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck1">
+            <label class="form-check-label" for="gridCheck1">
+              ¿Volverías a visitarnos? (Check:si)
+            </label>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <br><br><br>
+        <strong><p>Nota:Este formulario te llevará a la página de inicio. Si deseas dejarme tu opinión, 
+        sugerencia o similar, presiona el segundo botón :D</p></strong>
+      </div>
+      </div>
+     <div class="retorno"> <a href="index.html" class="btn btn-primary" role="button" onclick="alert('Serás enviado a la página de inicio :D')">Enviar</a></div>
+     <br>
+     <div class="retorno"> <a href="https://m.me/GaboReyx" class="btn btn-primary" role="button" onclick="alert
+    ('Serás redirigido a Messenger :D')">Escríbeme por Messenger</a></div>
+     <br>
+     <div class="retorno"><a href="https://api.whatsapp.com/send?phone=998729698" class="btn btn-primary" 
+      role="button" onclick="alert('Serás redirigido a Whatsapp :D')">Escríbeme por WhatsApp</a></div>
+    </form>
+  <br>
+  </div>
+  <br>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

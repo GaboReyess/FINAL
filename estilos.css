@@ -1,0 +1,26 @@
+.nav-link:hover{
+    background-color: rgb(193, 170, 39);
+    border: solid black 1px;
+}
+.logoindex{
+    height: 20px;
+}
+.titulo{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.patas{
+    background: greenyellow;
+}
+/*tamaño de ventana de pc*/
+@media(min-width:1201px) {
+
+}
+/*tamaño de ventana de tablet*/
+@media (min-width:600px) and (max-width:1200px) {
+
+}
+/*tamaño de ventana celular*/
+@media (max-width:599px){
+
+}
