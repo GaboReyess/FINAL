@@ -4,20 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Calculadora </title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="IMG/LOGO INDEX.png" class="logoindex"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-cont
+        <a class="navbar-brand" href="Index.html"><img src="IMG/LOGO INDEX.png" class="logoindex"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
+aria-cont
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-link" href="pagina1.html">¿Quiénes somos?</a>
-            <a class="nav-link" href="pagina2.html">Registro de Notas</a>
+            <a class="nav-link" href="pagina2.html">Registro</a>
             <a class="nav-link" href="pagina3.html">Misión-Visión</a>
             <a class="nav-link" href="pagina4.html">Calculadora escolar</a>
             <a class="nav-link" href="pagina5.html">Contacto</a>
@@ -25,59 +27,72 @@
         </div>
       </div>
     </nav>
-    <div>
-      <h1 class="titulo">CALCULADORA ESCOLAR</h1>
-       <h2>PÁGINA EN DESARROLLO, AÚN FALTA :c</h2>
-      <p class="texto_4">A continuación, te proporcionamos una calculadora que te permitirá sumar, restar , multiplicar o dividir 2 números cualesquiera! Solo digita los números en las casillas indicadas y seleccionas la operación que desees realizar. Esperamos te sea de utilidad.</p>
+    <br>
+    <div class="userprofe">
+      <p>PROFESOR:<a href="https://www.facebook.com/jaze.oficial">Juan C. Iwasaki</a></p>
     </div>
-    <form action="">
-      <table>
-        <tr>
-          <td>Ingrese el primer número:</td>
-          <td><input type="text" id="a"></td>
-        </tr>
-        <tr>
-          <td>Ingrese el segundo número:</td>
-          <td><input type="text" id="b"></td>
-        </tr>
-        <tr><td></td></tr>
-        <tr>
-          <td><input type="button" value="SUMA" onclick="calculosSUM()"></td>
-          <td><input type="button" value="RESTA" onclick="calculosRES()"></td>
-          <td><input type="button" value="MULTIPLICACIÓN" onclick="calculosMUL()"></td>
-          <td><input type="button" value="DIVISION" onclick="calculosDIV()"></td>
-        </tr>
-        <tr>
-          <td><input type="text" id="resultado"> </td>
-        </tr>
-      </table>
+    <div class="container">
+      <h1 class="titulo">CALCULADORA ESCOLAR</h1>
+      <br>
+      <p class="texto_4">Nosotros entendemos nuetra función comopilar de la formación y la educación de los niños y 
+jóvenes del país, y sabemos que a veces lo ejercicios matemáticos pueden resultar complejos. Es por este 
+motivo, que en nuestra página ponemos a disposición del estudiante una pequeña calculadora para que él pueda 
+agilizar el proceso de realización de sus operaciones matemáticas. Esperamos que sea de su agrado y que 
+logren darle uso!.</p>
+    <br>
+  <form name="calculator">
+    <br>
+    <h3 class="saludo">Hola!</h3>
+    <p>Haz algun cálculo para ver el resultado.
+    Puedes emplear 2 valores, o si gustas escribes más.</p>
+    <input type="textfield" name="ans" value="">
+    <br>
+    <br>
+    <input type="button" value="1" onClick="document.calculator.ans.value+='1'">
+    <input type="button" value="2" onClick="document.calculator.ans.value+='2'">
+    <input type="button" value="3" onClick="document.calculator.ans.value+='3'">
+    <input type="button" value="+" onClick="document.calculator.ans.value+='+'">
+    <br>
+    <input type="button" value="4" onClick="document.calculator.ans.value+='4'">
+    <input type="button" value="5" onClick="document.calculator.ans.value+='5'">
+    <input type="button" value="6" onClick="document.calculator.ans.value+='6'">
+    <input type="button" value="-" onClick="document.calculator.ans.value+='-'">
+    <br>
+    <input type="button" value="7" onClick="document.calculator.ans.value+='7'">
+    <input type="button" value="8" onClick="document.calculator.ans.value+='8'">
+    <input type="button" value="9" onClick="document.calculator.ans.value+='9'">
+    <input type="button" value="*" onClick="document.calculator.ans.value+='*'">
+    <br>
+    <input type="button" value="0" onClick="document.calculator.ans.value+='0'">
+    <input type="reset" value="c">
+    <input type="button" value="/" onClick="document.calculator.ans.value+='/'">
+    <input type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)">
     </form>
-    <script>
-      function calculosSUM(){
-        var num1=parseFloat(document.getElementById('a').value);
-        var num2=parseFloat(document.getElementById('b').value);
-        var resultado=num1+num2;
-        document.getElementById('resultado').value=resultado; 
-      }
-      function calculosRES(){
-        var num1=parseFloat(document.getElementById('a').value);
-        var num2=parseFloat(document.getElementById('b').value);
-        var resultado=num1-num2;
-        document.getElementById('resultado').value=resultado; 
-      }
-      function calculosMUL(){
-        var num1=parseFloat(document.getElementById('a').value);
-        var num2=parseFloat(document.getElementById('b').value);
-        var resultado=num1*num2;
-        document.getElementById('resultado').value=resultado; 
-      }
-      function calculosDIV(){
-        var num1=parseFloat(document.getElementById('a').value);
-        var num2=parseFloat(document.getElementById('b').value);
-        var resultado=num1/num2;
-        document.getElementById('resultado').value=resultado; 
-      }
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <br><br>.
+  </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></
+script>
   </body>
+  <footer class="patas">
+    <div class="parte1">  
+      <br>
+      <div class="retorno"><a href="#" class="btn btn-danger">Regresa arriba</a></div>
+    <br>  <br>  
+      <p>Otros enlaces:</p>
+    <div><a href="https://www.gob.pe/pronabec" class="otroslinks">Programa de becas nacionales</a></div>
+    <br>
+    <div><a href="https://es.symbolab.com/solver" class="otroslinks">Calculadora paso a paso</a>  </div>
+    <br>
+    <div><a href="https://es.wikipedia.org/wiki/Alexander_von_Humboldt" class="otroslinks">¿Quién fue Alexander Von 
+Humboldt?</a>  </div>
+    <br>
+    </div>
+     <div class="parte2"> <hr class="divider"><br>
+  <a role="button" class="retorno" href="https://www.tecsup.edu.pe/"> <img src="IMG/logo tecsup.png" 
+    class="logotecsup"></a> <br><br><br>
+  <div> Diseñado por:</div> <div> Gabriel Reyes B.</div><div>Adriana Palomino G.</div> <br><br>
+  </div>
+  </footer>
 </html>
