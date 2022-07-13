@@ -148,7 +148,7 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
 @media (min-width:602px) and (max-width:1200px) {
     .container{
         max-width: 90%;
-        background: white;
+        background-color: rgb(204, 174, 122);
         text-align: center;
     }
     .d-block{
