@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Registro</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light" id="nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="Index.html"><img src="IMG/LOGO INDEX.png" class="logoindex"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
+      aria-cont
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="pagina1.html">¿Quiénes somos?</a>
+              <a class="nav-link" href="pagina2.html">Registro</a>
+              <a class="nav-link" href="pagina3.html">Misión-Visión</a>
+              <a class="nav-link" href="pagina4.html">Calculadora escolar</a>
+              <a class="nav-link" href="pagina5.html">Contacto</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <br>
+      <div class="userprofe">
+        <div class="userprofesub"><p>PROFESOR:<a href="https://www.facebook.com/jaze.oficial">Juan C. Iwasaki</a></p></div>
+      <div class="container">
+      <h1 class="titulo">REGISTRO DE NOTAS</h1>
+      <p class="texto_4">Estimado docente, aqui puede usted ingresar las 5 notas del alumno y automaticamente se promediarán, mostrándole si el alumno en cuestión se encuenta aprobado o desaprobado.</p>
+      <div class="table-responsive">
+      <table class="table ">
+        <tr class="guindatabla">
+            <td>NOTA 1</td>
+            <td>NOTA 2</td>
+            <td>NOTA 3</td>
+            <td>NOTA 4</td>
+            <td>NOTA 5</td>
+        </tr>
+        <tr class="table-warning">
+          <td><input type="text" id="nota1"></td>
+          <td><input type="text" id="nota2"></td>
+          <td><input type="text" id="nota3"></td>
+          <td><input type="text" id="nota4"></td>
+          <td><input type="text" id="nota5"></td>
+        </tr>
+    </table>
+  </div>
+  <br>
+    <input type="button" value="CALCULAR" onclick="calculos()">
+    <br><br>
+    <table class="table">
+      <tr class="guindatabla">
+        <td>PROMEDIO</td>
+      </tr>
+      <tr class="table-warning">
+        <td><input type="text" id="promedio"></td>
+      </tr>
+      <tr class="guindatabla">
+        <td>ESTADO DEL ESTUDIANTE</td>
+      </tr>
+      <tr class="table-warning">
+        <td><input type="text" id="estado"></td>
+      </tr>
+      <tr class="table-warning"></tr>
+    </table>
+    <script>function calculos(){
+    var nota1=parseFloat(document.getElementById('nota1').value);
+    var nota2=parseFloat(document.getElementById('nota2').value);
+    var nota3=parseFloat(document.getElementById('nota3').value);
+    var nota4=parseFloat(document.getElementById('nota4').value);
+    var nota5=parseFloat(document.getElementById('nota5').value);
+    var promedio=(nota1+nota2+nota3+nota4+nota5)/5;
+    document.getElementById('promedio').value=promedio.toFixed(2);
+    if (promedio<13){var estado=('DESAPROBADO')}
+    else{var estado=('APROBADO')}
+    document.getElementById('estado').value=estado;
+    }</script>
+    </div>
+    </div>
+    <br>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+<footer class="patas">
+  <div class="parte1">
+  
+    <br>
+    <div class="retorno"><a href="#" class="btn btn-danger">Regresa arriba</a></div>
+  <br>  <br>  
+    <p>Otros enlaces:</p>
+  <div><a href="https://www.gob.pe/pronabec" class="otroslinks">Programa de becas nacionales</a></div>
+  <br>
+  <div><a href="https://es.symbolab.com/solver" class="otroslinks">Calculadora paso a paso</a>  </div>
+  <br>
+  <div><a href="https://es.wikipedia.org/wiki/Alexander_von_Humboldt" class="otroslinks">¿Quién fue Alexander Von 
+Humboldt?</a>  </div>
+  <br>
+  </div>
+   <div class="parte2"> <hr class="divider"><br>
+<a role="button" class="retorno" href="https://www.tecsup.edu.pe/"> <img src="IMG/logo tecsup.png" 
+  class="logotecsup"></a> <br><br><br>
+<div> Diseñado por:</div> 
+<div><a href="https://www.facebook.com/GaboReyx/" class="otroslinks">Gabriel Reyes B.</a>  </div>
+<div><a href="https://www.facebook.com/kyo.sohma.754918" class="otroslinks">Adriana Palomino G.</a>  </div>
+<br><br>
+</div>
+</footer>
+</html>
