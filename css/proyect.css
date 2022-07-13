@@ -21,6 +21,9 @@ body{
 h2{
     margin: 10px;
 }
+.logoindex{
+    height: 20px;
+}
 @media (min-width:1201px){
 
     .parrafo{
