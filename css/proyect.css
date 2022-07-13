@@ -36,11 +36,10 @@ h2{
 .otroslinks{
     color: white;
 }
-.logotecsup{
-    height: 30px;
-}
-.otroslinks{
-    color: white;
+.userprofe{
+    display: block;
+    text-align: end;
+    padding-right: 20px;
 }
 @media (min-width:1201px){
 
